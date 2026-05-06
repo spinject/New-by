@@ -1,0 +1,13 @@
+app = "flassy-telegram-bot"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  BOT_TOKEN = "YOUR_BOT_TOKEN"
+  ADMIN_ID = "YOUR_TELEGRAM_ID"
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
